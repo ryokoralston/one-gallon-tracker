@@ -92,3 +92,4 @@ with st.expander("History"):
 
     st.write("Past Achievement Days")
     for d, total in sorted(st.session_state.history.items(), reverse=True):
+        st.write(f"{d} : {int(total)} ml")
